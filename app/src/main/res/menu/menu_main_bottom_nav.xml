@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/fragment1"
+        android:title="PageOne"
+        android:icon="@drawable/ic_faq"/>
+    <item android:id="@+id/fragment2"
+        android:title="PageTwo"
+        android:icon="@drawable/ic_cloud"/>
+    <item android:id="@+id/fragment3"
+        android:title="PageThree"
+        android:icon="@drawable/ic_code"/>
+    <item android:id="@+id/fragment4"
+        android:title="PageFour"
+        android:icon="@drawable/ic_bug"/>
+</menu>
