@@ -2,22 +2,43 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph.xml"
-    app:startDestination="@id/fragment1">
+    app:startDestination="@id/fragment1NestGraph">
 
-    <fragment
-        android:id="@+id/fragment1"
-        android:name="com.example.quickswapbottomnav.Fragment1"
-        android:label="Fragment1" />
-    <fragment
-        android:id="@+id/fragment2"
-        android:name="com.example.quickswapbottomnav.Fragment2"
-        android:label="Fragment2" />
-    <fragment
-        android:id="@+id/fragment3"
-        android:name="com.example.quickswapbottomnav.Fragment3"
-        android:label="Fragment3" />
-    <fragment
-        android:id="@+id/fragment4"
-        android:name="com.example.quickswapbottomnav.Fragment4"
-        android:label="Fragment4" />
+
+    <navigation
+        android:id="@+id/fragment1NestGraph"
+        app:startDestination="@id/fragment1">
+        <fragment
+            android:id="@+id/fragment1"
+            android:name="com.example.quickswapbottomnav.Fragment1"
+            android:label="Fragment1" />
+    </navigation>
+
+
+    <navigation
+        android:id="@+id/fragment2NestGraph"
+        app:startDestination="@id/fragment2">
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.quickswapbottomnav.Fragment2"
+            android:label="Fragment2" />
+    </navigation>
+
+    <navigation
+        android:id="@+id/fragment3NestGraph"
+        app:startDestination="@id/fragment3">
+        <fragment
+            android:id="@+id/fragment3"
+            android:name="com.example.quickswapbottomnav.Fragment3"
+            android:label="Fragment3" />
+    </navigation>
+
+    <navigation
+        android:id="@+id/fragment4NestGraph"
+        app:startDestination="@id/fragment4">
+        <fragment
+            android:id="@+id/fragment4"
+            android:name="com.example.quickswapbottomnav.Fragment4"
+            android:label="Fragment4" />
+    </navigation>
 </navigation>
